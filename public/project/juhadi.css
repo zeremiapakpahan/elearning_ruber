@@ -1,0 +1,491 @@
+.head {
+    background-color: aliceblue;
+    width: 40%;
+}
+
+.head h2 {
+    font-family: 'Oswald-SemiBold', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #262626;
+}
+
+.button-container
+{
+    width: 230px;
+    margin: 35px auto;
+    border-style: solid;
+    border-color: #fa4667;
+    border-width: thin;
+    border-radius: 30px;
+    position: relative;
+}
+
+#btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 115px;
+    height: 100%;
+    background-color: #F74B6B;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.btn-toggle {
+    padding: 8px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    font-family: 'Roboto-Medium', sans-serif;
+}
+
+.button-container .btn-toggle:nth-child(2) {
+    color: #fae4e4;
+}
+
+.button-container .btn-toggle:nth-child(3) {
+    color: #262626;
+    font-weight: 600;
+}
+
+.content {
+    background-color: rgb(94, 171, 238);
+    width: 40%;
+}
+
+#dosen {
+    background-color: bisque;
+}
+
+#mahasiswa {
+    background-color: rgb(75, 68, 59);
+    transition: 0.5s;
+}
+
+.form-input {
+    width: 100%;
+    height: 20px;
+    margin: 20px 0 0;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    font-family: 'Roboto-Regular', sans-serif;
+    color: #262626;
+}
+
+.content .form-input:focus ~ .input-label, 
+.content .form-input:valid ~ .input-label {
+    transform: translateY(-20px);
+    font-size: 10px;
+    color: #4e4b4b;
+}
+
+.content .form-input:focus ~ .input-line, 
+.content .form-input:valid ~ .input-line {
+    background-color: #f2778d;
+
+}
+
+.input-line {
+    width: 100%;
+    height: 3px;
+    background-color: #F74B6B;
+    border-radius: 3px;
+    position: relative;
+    bottom: 15%;
+    transition: 0.5s;
+}
+
+.input-label {
+    font-size: 12px;
+    margin-top: 20px;
+    font-family: 'Roboto-Medium', sans-serif;
+    font-weight: 500;
+    color: #262626;
+    position: absolute;
+    left: 58.2%;
+    transition: 0.5s;
+}
+
+.btn-submit {
+    width: 70px;
+    height: 25px;
+    font-size: 12px;
+    font-family: 'Roboto-Medium', sans-serif;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background-color: #F74B6B;
+    color: #fae4e4;
+    margin: 30px 126px;
+    cursor: pointer;
+}
+
+.footer {
+    width: 40%;
+    background-color: rgb(91, 130, 163);
+    overflow: hidden;
+}
+
+.footer span {
+    padding: 5px;
+    background-color: #fae4e4;
+    margin-left: 75px;
+    font-size: 12px;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-weight: 600;
+}
+
+.footer span a {
+    text-decoration: none;
+    color: #F74B6B;
+}
+
+
+
+.sidebar {
+    width: 10.4vw;
+}
+
+.sidebar.active {
+    width: 27.3vw;
+}
+
+.logo-content .logo img {
+    width: 6.2vw;
+    height: 7.5vw;
+}
+
+.logo-content .logo h2 {
+    font-size: 3.9vw;
+}
+
+.sidebar #hide-btn {
+    top: 9px;
+    font-size: 1.9vw;
+    height: 4.6vw;
+    width: 4.6vw;
+    line-height: 4.8vw;
+    transform: translate(-65%);
+}
+
+.sidebar ul li {
+    margin: 0;
+    height: 7.9vw;
+    line-height: 50px;
+}
+
+.sidebar ul li .tooltip {
+    position: absolute;
+    left: 150px;
+    top: 0;
+    transform: translate(-40%, -50%);
+    border-radius: 6px;
+    height: 45px;
+    width: 135px;
+    background-color: #f3ecec;
+    line-height: 45px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    font-family: 'Roboto-Medium', sans-serif;
+    transition: 0s;
+    opacity: 0;
+    pointer-events: none;
+    display: block;
+}
+
+.sidebar.active ul li .tooltip {
+    display: none;
+}
+
+.sidebar ul li:hover .tooltip {
+    transition: all 0.5s ease;
+    top: 50%;
+    opacity: 1;
+}
+
+.sidebar ul li a {
+    font-size: 1.9vw;
+}
+
+.sidebar ul li a i {
+    height: 7.9vw;
+    min-width: 7.9vw;
+    line-height: 7.9vw;
+}
+
+
+
+/* Content */
+
+/* Daftar Kelas */
+
+.content {
+    width: calc(100vw - 14vw);
+    top: 110px;
+    left: calc(10.4vw + 28px);
+}
+
+.sidebar.active ~ .content {
+    width: calc(100vw - 30.9vw);
+    left: calc(27.3vw + 28px);
+}
+
+.daftar-kelas {
+    margin: 50px 0;
+}
+
+.daftar-kelas h2 {
+    font-size: 3.4vw;
+    padding: 0 20px 2.4vw;
+}
+
+.daftar-kelas .kelas-row {
+    height: 15.6vw;
+    margin-bottom: 1.9vw;
+}
+
+.daftar-kelas .kelas-row img {
+    width: 14.6vw;
+    height: 14.6vw;
+}
+
+.kelas-desk {
+    width: calc(100% - (14.6vw + 60px));
+}
+
+.kelas-desk h4 {
+    font-size: 2.4vw;
+    padding-bottom: 0.97vw;
+}
+
+.kelas-desk span:nth-child(2) {
+    font-size: 1.5vw;
+    height: 7.8vw;
+    line-height: 2.4vw;
+    width: calc(100% - 40px);
+}
+
+.kelas-desk span:nth-child(3) {
+    font-size: 1.5vw;
+    padding: 0 25px;
+}
+
+/* Pemisah */
+.content .line hr {
+    margin: 50px auto;
+    width: 93%;
+}
+
+.sidebar.active ~ .content .line hr {
+    margin: 50px auto;
+    width: 92%;
+}
+
+/* Form Kelas */
+.form-wrapper {
+    /* height: 300px; */
+    /* background-color: #aca5a5; */
+}
+
+.form-wrapper h5 {
+    font-size: 2.1vw;
+    padding: 0 20px 1.9vw;
+}
+
+.form-kelas {
+    width: 70%;
+}
+
+.input-container {
+    margin: 25px 20px;
+}
+
+.input:focus ~ .label,
+.input:valid ~ .label {
+    font-size: 10px;
+}
+
+.input {
+    font-size: 1.5vw;
+    /* border: 1px solid; */
+}
+
+.label {
+    font-size: 1.3vw;
+}
+
+.submit {
+    width: 6.9vw;
+    height: 2.4vw;
+    font-size: 1.3vw;
+    border-radius: 4px;
+    margin: 30px calc((100% - 6.9vw) / 2);
+}
+
+
+/* Right Bar Content */
+
+.right-sidebar {
+    display: none;
+}
+
+/* Top Bar */
+
+.top-bar {
+    position: relative;
+    width: 85.9vw;
+    left: 10.1vw;
+    top: -30px;
+    display: flex;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+}
+
+.sidebar.active ~ .top-bar {
+    width: 69vw;
+    left: 27vw;
+}
+
+/* Notif */
+
+.top-notif {
+    width: 25.3vw;
+    /* margin-right: 20px; */
+}
+
+.top-notif-heading {
+    font-size: 1.5vw;
+    /* background-color: #8f1b1b; */
+}
+
+.dropdown-container {
+    width: 25.3vw;
+}
+
+.dropdown-notif::-webkit-scrollbar {
+    width: 0.48vw;
+}
+
+.dropdown-notif::-webkit-scrollbar-thumb {
+    border-radius: 0.48vw;
+}
+
+.top-notif-row i {
+    font-size: 1.7vw;
+    padding: 0.48vw;
+}
+
+.top-notif-row div span:nth-child(1) {
+    font-size: 1.3vw;
+    line-height: 1.7vw;
+    padding: 0.48vw;
+}
+
+.top-notif-row div span:nth-child(2) {
+    font-size: 1.1vw;
+    padding: 0.48vw;
+}
+
+/* Profil */
+
+.top-profil {
+    position: relative;
+}
+
+.top-profil-image {
+    position: relative;
+    width: 11.7vw;
+    /* background-color: #f2778d; */
+}
+
+.top-profil-image img {
+    height: 8.7vw;
+    width: 8.7vw;
+    margin: calc((110px - 8.7vw) / 2) auto;
+}
+
+.top-profil-image form {
+    top: 70%;
+    left: 60%;
+}
+
+.top-profil-image form input {
+    width: 1.9vw;
+    height: 1.9vw;
+}
+
+.top-profil-image i {
+    top: 70%;
+    left: 60%;
+    font-size: 1.9vw;
+}
+
+.top-form-edit-container {
+    width: 16.9vw;
+    display: none;
+}
+
+.top-form-edit{
+    margin: 5px;
+}
+
+.top-form-edit input {
+    width: 16.6vw;
+    font-size: 0.97vw;
+    padding: 2px 0;
+    margin: 0.19vw 0;
+}
+
+.top-form-edit input:focus {
+    border-bottom-width: 2px;
+}
+
+.top-simpan-btn {
+    width: 4.8vw;
+    height: 1.9vw;
+    font-size: 0.97vw;
+    border-radius: 0.29vw;
+    margin: 1.4vw calc((16.6vw - 4.8vw) / 2 );
+}
+
+.top-bio {
+    height: 7vw;
+    margin: auto 0;
+}
+
+.top-bio span {
+    line-height: 2.3vw;
+}
+
+.top-bio span:nth-child(1) {
+    font-size: 1.7vw;
+}
+
+.top-bio span:nth-child(2) {
+    font-size: 1.5vw;
+}
+
+.top-bio span:nth-child(3) {
+    font-size: 1.3vw;
+}
+
+.top-edit-profil {
+    position: absolute;
+    top: 68%;
+    left: 100%;
+}
+
+.top-edit-profil i {
+    font-size: 1.5vw;
+}
+
+
+/* jangan lupo h2 kelas padding bottom 30px, tooltip, margin dan padding 
+form input container  */

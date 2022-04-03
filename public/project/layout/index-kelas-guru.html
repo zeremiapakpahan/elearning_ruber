@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUBER | GMEC </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- CSS Khusus  -->
+    <link rel="stylesheet" href="/css/style-khusus.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/font/font/css/all.css">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+        <div class="logo-content">
+            <div class="logo">
+                <img src="/img/gmec.png" alt="Logo">
+                <div class="logo-name">
+                    <h2>RUBER</h2>
+                </div>
+            </div>
+            <i class="fa fa-bars" id="hide-btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="">
+                    <i class="fa fa-th-large"></i>
+                    <span class="links-name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa fa-home"></i>
+                    <span class="links-name">Kelas</span>
+                </a>
+                <span class="tooltip">Kelas</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa fa-sign-out-alt"></i>
+                    <span class="links-name">Logout</span>
+                </a>
+                <span class="tooltip">Sign Out</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Akhir Sidebar -->
+
+    <!-- Khusus Ukuran Mobile -->
+    <div class="shadow-bg">
+
+    </div>
+
+    <!-- Konten -->
+    <div class="content">
+        <div class="kelas-header">
+            <h2>BIOLOGI KELAS 7</h2>
+            <div class="deskripsi-section">
+                <span class="deskripsi">Mandarin</span>
+                <div></div>
+            </div>
+            <div class="profil-section">
+                <img class="photo-section-1" src="/img/zere.jpg" alt="Foto">
+                <span class="name-section-1">Zeremia Timothy</span>
+                <span class="status">Guru</span>
+
+                <!-- <img class="photo-section-2" src="/img/karolin.jpg" alt="Foto">
+                <span class="name-section-2">Karolin Natalia</span>
+                <span class="status-2">P2</span> -->
+            </div>
+        </div>
+        <div class="kelas-menu">
+            <ul class="menu-container">
+                <li><a class="active-links" href="/layout/isi-kelas-dosen.html">TIMELINE</a></li>
+                <li><a href="">KEHADIRAN</a></li>
+                <li><a href="">ANGGOTA</a></li>
+                <li><a href="">DETAIL KELAS</a></li>
+            </ul>
+        </div>
+        <div class="kelas-main-content">
+            <form class="form-information-section" action="">
+                <input class="input-section" name="judul" type="text" placeholder="Judul">
+                <textarea class="ta-section" name="isi" rows="3" placeholder="Isi"></textarea>
+
+                <!-- <span class="label-section">Batas: </span>
+                <input class="date" name="batas" type="date">
+                <span class="placeholder">00 / 00 / 0000</span> -->
+
+                <span class="file-input-value">
+                    <span id="v1"></span>
+                    <span id="v2"></span>
+                    <span id="v3"></span>
+                    <i class="fa fa-times-circle" id="rem-val1"></i>
+                    <i class="fa fa-times-circle" id="rem-val2"></i>
+                    <i class="fa fa-times-circle" id="rem-val3"></i>
+                    <p id="vn"></p>
+                </span>
+
+                <i class="fa fa-paperclip"></i>
+                <span>
+                    <input class="file-input" name="file" type="file" multiple>
+                </span>
+                <button type="submit" class="btn-section">Kirim</button>
+            </form>
+
+            <form class="form-assignment-section" action="">
+                <input class="input-section" name="judul" type="text" placeholder="Judul">
+                <textarea class="ta-section" name="deskripsi" rows="3" placeholder="Deskripsi"></textarea>
+
+                <span class="label-section">Batas: </span>
+                <input class="date" name="batas" type="datetime-local">
+                <span class="placeholder">00 / 00 / 0000 &nbsp --.--</span>
+
+                <span class="file-input-value">
+                    <span id="v1"></span>
+                    <span id="v2"></span>
+                    <span id="v3"></span>
+                    <i class="fa fa-times-circle" id="rem-val1"></i>
+                    <i class="fa fa-times-circle" id="rem-val2"></i>
+                    <i class="fa fa-times-circle" id="rem-val3"></i>
+                    <p id="vn"></p>
+                </span>
+
+                <i class="fa fa-paperclip"></i>
+                <span>
+                    <input class="file-input" name="file" type="file" multiple>
+                </span>
+                <button type="submit" class="btn-section">Kirim</button>
+            </form>
+
+            <div class="quiz-section">
+                <form class="quiz-pilgan" action="">
+                    <input class="input-section" name="judul" type="text" placeholder="Judul">
+                    <textarea class="ta-section" name="deskripsi" rows="3" placeholder="Deskripsi"></textarea>
+
+                    <span class="label-section">Batas: </span>
+                    <input class="date" name="batas" type="datetime-local">
+                    <span class="placeholder">Durasi: </span>
+
+                    <input class="time" name="time" type="datetime-local">
+
+                    <div class="quiz-container">
+                        <h3>Pertanyaan</h3>
+                        <span class="add-question">Tambah Pertanyaan <i class="fa fa-plus"></i> </span>
+                        
+                        <div class="quiz-group">
+                            <span class="question"> <span class="number">1.</span>  <textarea class="ta-section" name="pertanyaan" rows="3" cols="80" placeholder="Pertanyaan"></textarea>  </span>
+
+                            <h3>Pilihan</h3>
+
+                            <div class="choice-group">
+                                <span class="choice"> <span class="alpha">A.</span> <textarea class="ta-section" name="pilihan_1" placeholder="Pilihan 1"></textarea>  </span>
+                                <span class="true"><input type="radio" name="pilihan" value="" ></span>
+                            </div>
+                            <div class="choice-group">
+                                <span class="choice"> <span class="alpha">B.</span> <textarea class="ta-section" name="pilihan_2" placeholder="Pilihan 2"></textarea>  </span>
+                                <span class="true"><input type="radio" name="pilihan" value="" ></span>
+                            </div>
+                            <div class="choice-group">
+                                <span class="choice"> <span class="alpha">C.</span> <textarea class="ta-section" name="pilihan_3" placeholder="Pilihan 3"></textarea> </span>
+                                <span class="true"><input type="radio" name="pilihan" value="" ></span>
+                            </div>
+                            <div class="choice-group">
+                                <span class="choice"> <span class="alpha">D.</span> <textarea class="ta-section" name="pilihan_4" placeholder="Pilihan 4"></textarea> </span>
+                                <span class="true"><input type="radio" name="pilihan" value="" ></span>
+                            </div>
+
+                            <span class="point">   <input class="input-section" name="point" type="text" placeholder="Point"> </span>
+                            <span class="delete"><i class="fa fa-trash"></i> Hapus</span>
+                        </div>
+
+                        <div class="btn-group">
+                            <button class="btn-section">Kosong</button>
+                            <button type="submit" class="btn-section">Kirim</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="quiz-section">
+                <form class="quiz-essay" action="">
+                    <input class="input-section" name="judul" type="text" placeholder="Judul">
+                    <textarea class="ta-section" name="deskripsi" rows="3" placeholder="Deskripsi"></textarea>
+
+                    <span class="label-section">Batas: </span>
+                    <input class="date" name="batas" type="datetime-local">
+                    <span class="placeholder">Durasi: </span>
+
+                    <input class="time" name="time" type="datetime-local">
+                    <!-- <input class="date" name="batas" type="datetime"> -->
+
+                    <div class="quiz-container">
+                        <h3>Pertanyaan</h3>
+                        <span class="add-question">Tambah Pertanyaan <i class="fa fa-plus"></i> </span>
+
+                        <div class="quiz-group">
+                            <span class="question"> <span class="number">1.</span>  <textarea class="ta-section" name="pertanyaan" rows="3" cols="80" placeholder="Pertanyaan"></textarea>  </span>
+                            
+                            <span class="point">   <input class="input-section" name="point" type="text" placeholder="Point"> </span>
+                            <span class="delete"><i class="fa fa-trash"></i> Hapus</span>
+                        </div>
+
+                        <div class="btn-group">
+                            <button class="btn-section">Kosong</button>
+                            <button type="submit" class="btn-section">Kirim</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="pagination">
+                <i class="fa fa-circle pg1 active-links"></i>
+                <span class="ipg1" >Informasi</span>
+                <i class="fa fa-circle pg2"></i>
+                <span class="ipg2" >Penugasan</span>
+                <i class="fa fa-circle pg3"></i>
+                <span class="ipg3" >Quiz Pilgan</span>
+                <i class="fa fa-circle pg4"></i>
+                <span class="ipg4" >Quiz Essay</span>
+            </div>
+
+            <div class="assignment-section" id="guru-section">
+                <img class="pattern" src="/img/pattern2.png" alt="Pattern">
+
+                <!-- <a href=""> -->
+                <img class="as-photo" src="/img/zere.jpg" alt="Foto">
+                <!-- </a> -->
+                <span class="as-name"> Zeremia Timothy </span>
+                <span>Guru</span>
+
+                <a href=""><i class="fa fa-pen"></i></a>
+                <a href=""><i class="fa fa-trash"></i></a>
+
+                <div class="assignment-header">
+                    <h5 class="assignment-title">Rangkuman Klasifikasi Mahluk Hidup</h5> 
+                    <span class="post-type">-Penugasan</span>
+                </div>
+
+                <p class="assignment-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quibusdam recusandae error consectetur. 
+                    Deserunt incidunt provident nam sed maxime quod accusantium aliquam placeat nisi id, dolores sapiente aperiam sequi perferendis.
+                </p>
+
+                <span class="file-container"> 
+                    <a href=""><i class="fa fa-file"></i> Klasifikasi Mahluk Hidup.mp4 </a> 
+                </span>
+
+                <span>Yang Mengumpulkan: <p>40 Orang</p> </span>
+                <span>Komentar: <p>8</p> </span>
+
+                <a href="" class="as-db">Detail</a>
+
+                <span> 17 Des 2021 09.30 WIB - 28 Des 2021 23.59 WIB </span>
+                <!-- <a href="" class="as-ocb">Buka</a> -->
+            </div>
+            <div class="information-section" id="guru-section">
+                <img class="pattern" src="/img/pattern2.png" alt="Pattern">
+
+                <!-- <a href=""> -->
+                <img class="is-photo" src="/img/zere.jpg" alt="Foto">
+                <!-- </a> -->
+                <span class="is-name"> Zeremia Timothy </span>
+                <span>Guru</span>
+
+                <a href=""><i class="fa fa-pen"></i></a>
+                <a href=""><i class="fa fa-trash"></i></a>
+
+                <div class="information-header">
+                    <h5 class="information-title">Video Penjelasan Materi Klasifikasi Mahluk Hidup</h5> 
+                    <span class="post-type">-Informasi</span>
+                </div>
+
+                <p class="information-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quibusdam recusandae error consectetur. 
+                    Deserunt incidunt provident nam sed maxime quod accusantium aliquam placeat nisi id, dolores sapiente aperiam sequi perferendis.
+                </p>
+
+                <span class="file-container"> 
+                    <a href=""><i class="fa fa-file"></i> Klasifikasi Mahluk Hidup.mp4 </a> 
+                </span>
+
+                <span>Komentar: <p>8</p> </span>
+
+                <a href="" class="is-db">Detail</a>
+
+                <span> 17 Des 2021 09.30 WIB </span>
+            </div>
+            <div class="quiz-pilgan-section" id="guru-section">
+                <img class="pattern" src="/img/pattern2.png" alt="Pattern">
+
+                <!-- <a href=""> -->
+                <img class="qps-photo" src="/img/zere.jpg" alt="Foto">
+                <!-- </a> -->
+                <span class="qps-name"> Zeremia Timothy </span>
+                <span>Guru</span>
+
+                <a href=""><i class="fa fa-pen"></i></a>
+                <a href=""><i class="fa fa-trash"></i></a>
+
+                <div class="quiz-pilgan-header">
+                    <h5 class="quiz-pilgan-title">Video Penjelasan Materi Klasifikasi Mahluk Hidup</h5> 
+                    <span class="post-type">-Quiz Pilgan</span>
+                </div>
+
+                <p class="quiz-pilgan-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quibusdam recusandae error consectetur. 
+                    Deserunt incidunt provident nam sed maxime quod accusantium aliquam placeat nisi id, dolores sapiente aperiam sequi perferendis.
+                </p>
+
+                <span>Yang Mengerjakan: <p>12 Orang</p> </span>
+
+                <a href="" class="qps-db">Detail</a>
+
+                <span>  17 Des 2021 09.30 WIB - 28 Des 2021 23.59 WIB </span>
+            </div>
+            <div class="quiz-essay-section" id="guru-section">
+                <img class="pattern" src="/img/pattern2.png" alt="Pattern">
+
+                <!-- <a href=""> -->
+                <img class="qes-photo" src="/img/zere.jpg" alt="Foto">
+                <!-- </a> -->
+                <span class="qes-name"> Zeremia Timothy </span>
+                <span>Guru</span>
+
+                <a href=""><i class="fa fa-pen"></i></a>
+                <a href=""><i class="fa fa-trash"></i></a>
+
+                <div class="quiz-essay-header">
+                    <h5 class="quiz-essay-title">Video Penjelasan Materi Klasifikasi Mahluk Hidup</h5> 
+                    <span class="post-type">-Quiz Essay</span>
+                </div>
+
+                <p class="quiz-essay-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quibusdam recusandae error consectetur. 
+                    Deserunt incidunt provident nam sed maxime quod accusantium aliquam placeat nisi id, dolores sapiente aperiam sequi perferendis.
+                </p>
+
+                <span>Yang Mengerjakan: <p>12 Orang</p> </span>
+
+                <a href="" class="qes-db">Detail</a>
+
+                <span>  17 Des 2021 09.30 WIB - 28 Des 2021 23.59 WIB </span>
+            </div>
+        </div>
+    </div>
+    <!-- Akhir Konten -->
+
+    <!-- Right Bar Content -->
+    <div class="right-sidebar">
+        <div class="profil">
+            <div class="profil-image">
+                <img src="/img/avatar.jpg" alt="Profil" id="profil-img">
+                <form id="form" action="">
+                    <input name="foto" type="file" class="img-input" id="file-upload">
+                </form>
+                <i class="fa fa-camera"></i>
+            </div>
+            <div class="form-edit-container">
+                <form class="form-edit" action="">
+                    <input name="nama" type="text" value="ZEREMIA PAKPAHAN" required autofocus>
+                    <input name="nik" type="text" value="YDB.10.06.017" required autofocus>
+                    <input name="password" type="password" value="*****" required autofocus>
+                    <button type="submit" class="simpan-btn">Simpan</button>
+                </form>
+            </div>
+            <div class="bio">
+                <span class="nama-lengkap">ZEREMIA TIMOTHY</span>
+                <span>zeremiakeren@gmail.com</span>
+                <span>GURU</span>
+            </div>
+            <span class="edit-profil">
+                <i id="edit-link" class="fa fa-edit"></i>
+            </span>
+        </div>
+        <div class="separator">
+            <hr>
+        </div>
+        <div class="notif">
+            <div class="notif-heading">
+                <span>NOTIFICATION</span>
+                <i class="fa fa-bell"></i>
+            </div>
+            <div class="notif-content">
+                <a href="">
+                    <div class="notif-row">
+                        <i class="fa fa-file-alt"></i>
+                        <div>
+                            <span>
+                                Kazelia Valent Agatha Timothy
+                                <p>telah mengerjakan</p>
+                                Bimbingan 1
+                            </span>
+                            <span>
+                                17 Des 2019 19.29 WIB
+                            </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="notif-row">
+                        <i class="fa fa-file-alt"></i>
+                        <div>
+                            <span>
+                                Kazelia Valent Agatha Timothy
+                                <p>telah mengerjakan</p>
+                                Bimbingan 1
+                            </span>
+                            <span>
+                                17 Des 2019 19.29 WIB
+                            </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="notif-row">
+                        <i class="fa fa-file-alt"></i>
+                        <div>
+                            <span>
+                                Kazelia Valent Agatha Timothy
+                                <p>telah mengerjakan</p>
+                                Bimbingan 1
+                            </span>
+                            <span>
+                                17 Des 2019 19.29 WIB
+                            </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="notif-row">
+                        <i class="fa fa-file-alt"></i>
+                        <div>
+                            <span>
+                                Kazelia Valent Agatha Timothy
+                                <p>telah mengerjakan</p>
+                                Bimbingan 1
+                            </span>
+                            <span>
+                                17 Des 2019 19.29 WIB
+                            </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="notif-row">
+                        <i class="fa fa-file-alt"></i>
+                        <div>
+                            <span>
+                                Kazelia Valent Agatha Timothy
+                                <p>telah mengerjakan</p>
+                                Bimbingan 1
+                            </span>
+                            <span>
+                                17 Des 2019 19.29 WIB
+                            </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="notif-row">
+                        <i class="fa fa-file-alt"></i>
+                        <div>
+                            <span>
+                                Kazelia Valent Agatha Timothy
+                                <p>telah mengerjakan</p>
+                                Bimbingan 1
+                            </span>
+                            <span>
+                                17 Des 2019 19.29 WIB
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Akhir Right Bar Content -->
+
+    <!-- Top Bar Content -->
+    <div class="top-bar">
+        <div class="top-notif">
+            <ul>
+                <li>
+                    <div class="top-notif-heading">
+                        <span>NOTIFICATION</span>
+                        <i class="fa fa-bell"></i>
+                    </div>
+                </li>
+                <li class="dropdown-container">
+                    <ul class="dropdown-notif">
+                        <a href="">
+                            <li class="top-notif-row">
+                                <i class="fa fa-file-alt"></i>
+                                <div>
+                                    <span>
+                                        Kazelia Valent Agatha Timothy
+                                        <p>telah mengerjakan</p>
+                                        Bimbingan 1
+                                    </span>
+                                    <span>
+                                        17 Des 2019 19.29 WIB
+                                    </span>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="top-notif-row">
+                                <i class="fa fa-file-alt"></i>
+                                <div>
+                                    <span>
+                                        Kazelia Valent Agatha Timothy
+                                        <p>telah mengerjakan</p>
+                                        Bimbingan 1
+                                    </span>
+                                    <span>
+                                        17 Des 2019 19.29 WIB
+                                    </span>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="top-notif-row">
+                                <i class="fa fa-file-alt"></i>
+                                <div>
+                                    <span>
+                                        Kazelia Valent Agatha Timothy
+                                        <p>telah mengerjakan</p>
+                                        Bimbingan 1
+                                    </span>
+                                    <span>
+                                        17 Des 2019 19.29 WIB
+                                    </span>
+                                </div>
+                            </li>
+                        </a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="top-profil">
+            <div class="top-profil-image">
+                <img src="/img/avatar.jpg" alt="Profil" id="top-profil-img">
+                <form id="top-form" action="">
+                    <input name="foto" type="file" class="top-img-input" id="top-file-upload">
+                </form>
+                <i class="fa fa-camera"></i>
+            </div>
+            <div class="top-form-edit-container">
+                <form class="top-form-edit" action="">
+                    <input name="nama" type="text" value="ZEREMIA PAKPAHAN" required autofocus>
+                    <input name="nik" type="text" value="YDB.10.06.017" required autofocus>
+                    <input name="password" type="password" value="*****" required autofocus>
+                    <button type="submit" class="top-simpan-btn">Simpan</button>
+                </form>
+            </div>
+            <div class="top-bio">
+                <span class="nama">ZEREMIA TIMOTHY</span>
+                <span>YDB.10.06.017</span>
+                <span>DOSEN</span>
+            </div>
+            <span class="top-edit-profil">
+                <i id="top-edit-link" class="fa fa-edit"></i>
+            </span>
+        </div>
+    </div>
+    <!-- Akhir Top Bar Content -->
+
+    <!-- jQuery -->
+    <script src="/js/jquery.js"></script>
+
+    <!-- Javascript -->
+    <script src="/js/script.js"></script>
+    <script src="/js/script2.js"></script>
+
+</body>
+
+</html>

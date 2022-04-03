@@ -1,0 +1,590 @@
+/* Landing Page */
+
+/* Font */
+
+@font-face {
+    font-family: Oswald-Bold;
+    src: url(/font/Oswald-Bold.ttf);
+    src: url(/font/Oswald-Bold.ttf) format('ttf'),
+        url(/font/Oswald-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Oswald-SemiBold;
+    src: url(/font/Oswald-SemiBold.ttf);
+    src: url(/font/Oswald-SemiBold.ttf) format('ttf'),
+        url(/font/Oswald-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(/font/Roboto-Medium.ttf);
+    src: url(/font/Roboto-Medium.ttf) format('ttf'),
+        url(/font/Roboto-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(/font/Roboto-Regular.ttf);
+    src: url(/font/Roboto-Regular.ttf) format('ttf'),
+        url(/font/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: FontAwesome;
+    src: url(/font/font/webfonts/fa-regular-400.ttf);
+    src: url(/font/font/webfonts/fa-regular-400.ttf) format('ttf'),
+        url(/font/font/webfonts/fa-regular-400.ttf) format('truetype');
+}
+
+/* Reset Default */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    background-color: #fff;
+    font-family: sans-serif;
+    color: #262626;
+}
+
+
+/*-------------------------------------------------- */
+
+/* Form */
+
+.error, .failed {
+    font-size: 14px;
+    color: #262626;
+    font-family: 'Roboto-Medium', sans-serif;
+    background-color: #f8d7da;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.split-screen {
+    display: flex;
+    height: 100vh;
+}
+
+/* baru jok */
+
+.left img {
+    width: 500px;
+    height: 500px;
+    margin: 70px 100px 0;
+}
+
+.left {
+    order: 2;
+}
+
+.right {
+    width: 60%;
+    order: 1;
+}
+
+.form-container {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    padding: 5px;
+    margin: 10% 25%;
+    /* overflow: hidden; */
+    /* background-color: #f2778d; */
+}
+
+.form-container h2 {
+    text-align: center;
+    padding: 10px 0 0;
+    font-family: 'Oswald-SemiBold', sans-serif;
+    font-size: 30px;
+    color: #262626;
+}
+
+.button-container {
+    width: 240px;
+    height: 30px;
+    margin: 35px auto;
+    border-style: solid;
+    border-color: #88c8f2;
+    border-width: thin;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+}
+
+#btn {
+    background-color: #4bb2f7;
+    width: 120px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+    /* transition: 0.5s; */
+}
+
+/* baru jok */
+
+.toggle-btn {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    width: 120px;
+    border-radius: 30px;
+}
+
+.toggle-btn:nth-child(2) {
+    color: #f0f4f7;
+    padding: 2px 3px 0 0;
+}
+
+.toggle-btn:nth-child(3) {
+    color: #262626;
+    padding: 2px 0 0 3px;
+}
+
+.form-group {
+    position: absolute;
+    top: 150px;
+    width: 280px;
+    transition: 0.5s;
+    left: 45px;
+}
+
+
+/* baru jok */
+
+/* #guru {
+    left: 55px;
+}
+
+#siswa {
+    left: 455px;
+} */
+
+.input-group {
+    position: relative;
+    margin: 30px 0;
+}
+
+.form-input:focus,
+.form-input:valid {
+    border-color: #88c8f2;
+}
+
+.form-input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0 0;
+    font-family: 'Roboto-Regular', sans-serif;
+    color: #262626;
+    font-size: 14px;
+    background: none;
+    border: solid 2px #4bb2f7;
+    border-radius: 3px;
+    transition: 0.5s;
+    outline: none;
+}
+
+.form-input:focus ~ .input-label,
+.form-input:valid ~ .input-label {
+    transform: translateY(-50%);
+    top: 5px;
+    font-size: 8px;
+    padding: 0 1.2em;
+    color: #615d5d;
+    font-weight: 600;
+}
+
+/* .form-input:focus ~ span,
+.form-input:valid ~ span {
+    background-color: #f2778d;
+}
+
+.input-group span {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #F74B6B;
+    transition: 0.5s;
+} */
+
+.input-label {
+    position: absolute;
+    top: 40%;
+    left: 5px;
+    color: #262626;
+    font-size: 12px;
+    font-family: 'Roboto-Medium', sans-serif;
+    pointer-events: none;
+    transition: 0.5s;
+    background-color: #fff;
+}
+
+.submit-btn {
+    width: 70px;
+    height: 25px;
+    font-size: 12px;
+    font-family: 'Roboto-Medium', sans-serif;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background-color: #4bb2f7;
+    color: #f0f4f7;
+    margin: 30px 100px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.submit-btn:hover {
+    background-color: #88c8f2;
+    color: #fff;
+}
+
+.signup-link {
+    font-size: 14px;
+    font-family: 'Roboto-Medium', sans-serif;
+    color: #262626;
+    text-align: center;
+    /* background-color: #615d5d; */
+}
+
+.signup-link a {
+    color: #4bb2f7;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.signup-link a:hover {
+    color: #88c8f2;
+}
+
+
+/* Responsive */
+
+/* ukuran notebook */
+
+@media screen and (max-width: 1335px) {
+
+    /* Form */
+
+    .split-screen {
+        width: 100vw;
+    }
+
+    .left {
+        width: 40%;
+    }
+
+    .left img {
+        width: 100%;
+        height: 85%;
+    }
+
+    .right {
+        width: 60%;
+    }
+
+    .form-container {
+        width: 46%;
+    }
+
+    .form-container h2 {
+        font-size: 2vw;
+    }
+
+    .button-container
+    {
+        width: 16vw;
+        height: 2vw;
+    }
+
+    #btn {
+        width: 8vw;
+        height: 100%;
+    }
+
+    .toggle-btn {
+        font-size: 1vw;
+    }
+
+    .toggle-btn:nth-child(2) {
+        padding: 0.4vw 0 0 2.5vw;
+    }
+    
+    .toggle-btn:nth-child(3) {
+        padding: 0.4vw 0 0 3.8vw;
+    }
+
+    .form-group {
+        width: 70%;
+        top: 11.2vw;
+    }
+
+    #guru {
+        left: 4.3vw;
+    }
+    
+    #siswa {
+        left: 34vw;
+    }
+
+    .form-input {
+        font-size: 1vw;
+        margin: 0;
+    }
+    
+    .input-group span {
+        top: 100%;
+    }
+
+    .input-label {
+        font-size: 0.8vw;
+        top: 30%;
+    }
+
+    .submit-btn {
+        width: 5vw;
+        height: 1.8vw;
+        font-size: 0.8vw;
+        border-radius: 4px;
+        margin: 2vw 7.2vw;
+    }
+
+    .signup-link {
+        font-size: 1vw;
+    }
+    
+}
+
+/* ukuran tablet besar */
+
+@media screen and (max-width: 1024px) {
+
+    /* Form */
+
+    .split-screen {
+        flex-direction: column-reverse;
+        overflow: hidden;
+    }
+
+    .left {
+        width: 100%;
+    }
+    
+    .left img {
+        width: 62%;
+        height: 62%;
+        margin: 6.8vw 17.5vw 0;
+    }
+    
+    .right {
+        width: 100%;
+        height: 100%;
+    }
+
+    .form-container {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .form-container h2 {
+        font-size: 5.3vw;
+        padding: 50px 0 0;
+    }
+
+    .button-container
+    {
+        width: 31vw;
+        height: 3.8vw;
+    }
+
+    #btn {
+        width: 15.5vw;
+        height: 100%;
+    }
+
+    .toggle-btn {
+        font-size: 1.9vw;
+    }
+
+    .toggle-btn:nth-child(2) {
+        padding: 0.6vw 0 0 4.8vw;
+    }
+    
+    .toggle-btn:nth-child(3) {
+        padding: 0.6vw 0 0 7.8vw;
+    }
+
+    .form-group {
+        width: 73%;
+        top: 24.4vw;
+    }
+
+    #guru {
+        left: 12.6vw;
+    }
+    
+    #siswa {
+        left: 100vw;
+    }
+
+    .form-input {
+        padding: 5px 0;
+        margin: 0;
+        font-size: 1.9vw;
+    }
+
+    .form-input:focus ~ .input-label,
+    .form-input:valid ~ .input-label {
+        font-size: 1.3vw;
+    }
+
+    .input-label {
+        font-size: 1.7vw;
+        top: 30%;
+    }
+
+    .submit-btn {
+        width: 7.7vw;
+        height: 3.4vw;
+        font-size: 1.7vw;
+        margin: 7.7vw 33vw;
+    }
+
+    .signup-link {
+        font-size: 1.9vw;
+    }
+
+
+}
+
+
+/* ukuran tablet sedang */
+
+@media screen and (max-width: 768px) {
+
+}
+
+
+/* ukuran mobile sedang */
+
+@media screen and (min-width: 280px) and (max-width: 576px) {
+
+    /* Form */
+    
+    .split-screen {
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .left {
+        width: 100%;
+    }
+    
+    .left img {
+        width: 62%;
+        height: 62%;
+        margin: 6.8vw 17.5vw 0;
+    }
+    
+    .right {
+        width: 100%;
+        height: 100%;
+    }
+
+    .form-container {
+        width: 100%;
+        height: 100%;
+        margin: 0 0;
+    }
+
+    .form-container h2 {
+        font-size: 7.4vw;
+        padding: 0 0;
+    }
+
+    .button-container
+    {
+        width: 46vw;
+        height: 7.9vw;  
+        margin: 10px auto;
+    }
+
+    #btn {
+        width: 23vw;
+        height: 100%;
+    }
+
+    .toggle-btn {
+        font-size: 3.2vw;
+    }
+
+    .toggle-btn:nth-child(2) {
+        padding: 1.8vw 0 0 6.6vw;
+    }
+    
+    .toggle-btn:nth-child(3) {
+        padding: 1.8vw 0 0 9.9vw;
+    }
+
+    .form-group {
+        width: 73%;
+        top: 16.3vh;
+    }
+
+    #guru{
+        left: 12.6vw;
+    }
+    
+    #siswa {
+        left: 100vw;
+    }
+
+    .input-group {
+        margin: 5.5vw 0;
+    }
+
+    .form-input {
+        padding: 5px 0;
+        margin: 0;
+        font-size: 3.2vw;
+    }
+
+    .form-input:focus ~ .input-label,
+    .form-input:valid ~ .input-label {
+        font-size: 2.2vw;
+    }
+
+    .input-label {
+        font-size: 2.8vw;
+        top: 30%;
+    }
+
+    .submit-btn {
+        width: 12.8vw;
+        height: 5.5vw;
+        font-size: 2.8vw;
+        margin: 0 0 1.8vw 31vw;
+    }
+
+    .signup-link {
+        font-size: 3.2vw;
+    }
+
+}
